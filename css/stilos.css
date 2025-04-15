@@ -1,0 +1,148 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+:root{
+   
+    --green: rgb(112, 207, 144);
+    --green-hover: rgb(9, 210, 76);
+    --dark-20: #17171A;
+    --dark-30: #fff;
+    --dark-40: #a3ffcf24;
+    --dark-50: #20200A;
+    --dark-60:#fff;
+    --dark-70: #323232;
+}
+
+body{
+    font-family: "Pangolin", cursive;
+    font-style: normal;
+
+    background:var(--dark-40);
+    overflow-x:hidden;
+    -webkit-font-smoothing:antialiased;
+    padding:20px 30px 20px 30px;
+    background-color: var(--dark-40);
+}
+header{
+    display: flex;
+    border-bottom:5px solid black;
+    margin: 10px 10px 40px 10px;
+    justify-content: center;
+   
+   
+}
+
+header h1{
+    color:var(--green);  
+   font-size: 45px; 
+  }
+  
+  main{
+    display: flex;
+    flex-direction:row;
+    justify-content:space-between;
+    
+  }
+  
+  div#tabela{
+    display: flex;
+    justify-content: center;
+    width:75%;
+  }
+  div#formulario{
+    display: flex;
+    justify-content: left;
+    width:25%;
+  }
+ tr#tr_principal{
+background: var(--green);
+padding: 10px;
+font-size: 23px;
+font-family: "Pangolin", cursive;
+color:rgba(255, 255, 255, 0.778);
+border-bottom: none;
+border: 1px solid #000;
+text-align: center;
+  }
+
+  tr#tr_principal td{
+  padding: 10px;
+
+      }
+tr.dados{
+    text-align: center; 
+    font-family: "Pangolin", cursive;
+    background-color:var(--dark-30);
+    background-color: var(--dark-40);
+    font-size: 18px;
+    padding:10px;
+}
+tr.dados td{
+    
+    padding:10px;
+}
+
+td.icon_alterar {
+    cursor:pointer;
+    background-color: var(--green); 
+} 
+td.icon_alterar:hover {
+    cursor:pointer;
+    background-color: var(--green-hover); 
+} 
+td.icon_apagar{
+    background-color: rgba(98, 3, 3, 0.566);
+    cursor:pointer;
+ }
+ 
+td.icon_apagar:hover{
+    background-color: rgb(214, 5, 5);
+
+ }
+
+ tr.dados img{
+    width: 30px;
+    
+}
+
+  label{
+    color:var(--dark-70);
+  }
+     
+  input{
+      width:100%;
+      padding:1rem;
+      outline:none;
+      border-radius: 8px;
+      border:1px solid #333;
+      height: 40px;
+      color: rgb(12, 27, 27);
+      margin:0 0 1rem 0;
+      font-size: 18px;
+      font-family: "Roboto", sans-serif;
+  }
+
+select{
+    width:40%;
+    padding:7px;
+    border-radius: 8px;
+    outline:none;
+    font-family: "Roboto", sans-serif;
+}
+.btn{
+        width:30%;
+        height:50px;
+        outline:none;
+        border-radius: 8px;
+        background-color: var(--green);  
+        color:rgba(0, 0, 0, 0.86);
+        font-size: 1rem;
+        cursor:pointer;
+        border:none;
+        font-weight: 600;
+       
+}
+  

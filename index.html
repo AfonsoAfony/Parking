@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/stilos.css">    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parking</title>
+
+</head>
+<body>
+<header>
+<h1>Estacionamento de Veículos</h1>
+</header>
+<main>
+<div id="tabela">
+    <div>
+        <table border="0">
+            <tbody>
+
+            
+            <tr id="tr_principal">
+                <td>Tipo de Veículo</td>
+                <td>Marca</td>
+                <td>Placa</td>
+                <td>Proprietário</td>
+                <td>Data de Entrada</td>
+                <td>Data de Saída</td>
+                <td>Preço</td>
+                <td>Editar</td>
+                <td>Apagar</td>
+            </tr>
+            <tr class="dados">
+               
+            </tr>
+        </tbody>
+        </table>
+    </div>
+    
+</div>
+<div id="formulario">
+    <form action="" onsubmit="return false;">
+        <br>
+        <label for="tipo-veic">Tipo de Veículo:</label>
+  <select id="tipo-veic">
+      <option value="carro">Carro</option>
+      <option value="carrinha">Carrinha</option>
+      <option value="camiao">Camião</option>
+      <option value="moto">Motocicleta</option>
+  </select>
+  <br><br>
+        <label for="marca">Marca:</label>
+        <input type="text" id="marca" placeholder="Marca">
+
+        <label for="placa">Placa:</label>
+        <input type="text" placeholder="Placa" id="placa">
+
+        <label for="prop">Proprietário:</label>
+        <input type="text" placeholder="Proprietário" id="prop">
+
+        <label for="dt-entrada">Data de Entrada:</label>
+        <input type="datetime-local" name="data-entrada" id="data-entrada">
+
+        <label for="preco" id="lb-preco">Preço</label>
+        <input type="text" id="preco" placeholder="preço">
+
+        
+        <button class="btn" id="btn-salvar" onclick="salvarCarro()" >Salvar</button>
+</div>
+    </form>
+</main>
+       
+</body>
+<script src="js/script.js"></script>
+</html>

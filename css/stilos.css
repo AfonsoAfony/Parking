@@ -152,7 +152,7 @@ select{
    }
   
     input,select{
-      width:20.5%;
+      width:36.5%;
       font-size: smaller;
       height: 30px;
       
@@ -181,7 +181,7 @@ select{
       width:100%;
     }
     td{
-      font-size:8px;
+      font-size:7.5px;
    }
 
   }
@@ -191,7 +191,7 @@ select{
      }
 
     input,select{
-      width:23.5%;
+      width:43.5%;
       font-size: smaller;
       
   }
